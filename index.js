@@ -18,9 +18,9 @@ const {
 } = require("./utils/rankine.js");
 
 const {
-  // fahrenheitToCelsius,
-  // fahrenheitToKelvin,
-  // fahrenheitToRankine,
+  fahrenheitToCelsius,
+  fahrenheitToKelvin,
+  fahrenheitToRankine,
 } = require("./utils/fahrenheit.js");
 
 const inputSuhu = 100;
