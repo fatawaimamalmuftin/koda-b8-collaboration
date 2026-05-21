@@ -13,7 +13,7 @@ const {
 
 const {
   // rankineToCelsius,
-  // rankineToKelvin,
+  rankineToKelvin,
   // rankineToFahrenheit,
 } = require("./utils/rankine.js");
 
@@ -25,6 +25,9 @@ const {
 
 const inputSuhu = 100;
 
+// TODO: Do user input and calculation.
+
+console.log(rankineToKelvin(5))
 console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(inputSuhu));
 console.log("Celcius ke Kelvin     : " + celsiusToKelvin(inputSuhu));
 console.log("Celcius ke Rankine    : " + celsiusToRankine(inputSuhu));
