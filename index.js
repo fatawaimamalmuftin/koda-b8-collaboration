@@ -1,33 +1,36 @@
 // TODO: Uncomment after implemented
 const {
-  celsiusToKelvin,
-  celsiusToRankine,
-  celsiusToFahrenheit,
+    celsiusToKelvin,
+    celsiusToRankine,
+    celsiusToFahrenheit,
 } = require("./utils/celsius.js");
 
 const {
-  // kelvinToCelsius,
-  // kelvinToRankine,
-  // kelvinToFahrenheit,
+    // kelvinToCelsius,
+    // kelvinToRankine,
+    // kelvinToFahrenheit,
 } = require("./utils/kelvin.js");
 
 const {
   // rankineToCelsius,
   rankineToKelvin,
-  // rankineToFahrenheit,
+  rankineToFahrenheit,
 } = require("./utils/rankine.js");
 
 const {
-  // fahrenheitToCelsius,
-  // fahrenheitToKelvin,
-  // fahrenheitToRankine,
+  fahrenheitToCelsius,
+  fahrenheitToKelvin,
+  fahrenheitToRankine,
 } = require("./utils/fahrenheit.js");
 
 const inputSuhu = 100;
 
-// TODO: Do user input and calculation.
+try {
+    console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(inputSuhu));
+    console.log("Celcius ke Kelvin     : " + celsiusToKelvin(inputSuhu));
+    console.log("Celcius ke Rankine    : " + celsiusToRankine(inputSuhu));
+} catch (err) {
+    console.log("Error :", err)
+}
 
-console.log(rankineToKelvin(5))
-console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(inputSuhu));
-console.log("Celcius ke Kelvin     : " + celsiusToKelvin(inputSuhu));
-console.log("Celcius ke Rankine    : " + celsiusToRankine(inputSuhu));
+

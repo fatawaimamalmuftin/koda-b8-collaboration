@@ -8,9 +8,17 @@ function rankineToKelvin (value) {
     }
 }
 
+function rankineToFahrenheit (value) { 
+    if (typeof value !== "number") { 
+      throw new Error("Input must be number"); 
+    }
+    return value - 459.67
+}
+
+
 // TODO: Uncomment after implemented
 module.exports = {
   // rankineToCelsius,
   rankineToKelvin,
-  // rankineToFahrenheit,
+  rankineToFahrenheit,
 };
