@@ -12,8 +12,8 @@ exports.input = (text)=>{
   });
 };
 
-exports.closeInput = () => {
+exports.closeInput = (text) => {
   console.clear;
-  console.log("Terima kasih telah berkunjung!");
+  console.log(text);
   rl.close();
 };
