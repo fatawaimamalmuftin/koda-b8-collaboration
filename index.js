@@ -15,7 +15,7 @@ const {
   // rankineToCelsius,
   rankineToKelvin,
   // rankineToFahrenheit,
-} = require("./utils/rankine.js");
+} = require("./src/utils/rankineToKelvin.js");
 
 const {
   // fahrenheitToCelsius,
@@ -25,3 +25,5 @@ const {
 
 
 // TODO: Do user input and calculation.
+
+console.log(rankineToKelvin(5))
