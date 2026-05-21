@@ -12,18 +12,19 @@ const {
 } = require("./utils/kelvin.js");
 
 const {
-    // rankineToCelsius,
-    // rankineToKelvin,
-    // rankineToFahrenheit,
+  // rankineToCelsius,
+  rankineToKelvin,
+  rankineToFahrenheit,
 } = require("./utils/rankine.js");
 
 const {
-    // fahrenheitToCelsius,
-    fahrenheitToKelvin,
-    // fahrenheitToRankine,
+  fahrenheitToCelsius,
+  fahrenheitToKelvin,
+  fahrenheitToRankine,
 } = require("./utils/fahrenheit.js");
 
 const inputSuhu = 100;
+
 try {
     console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(inputSuhu));
     console.log("Celcius ke Kelvin     : " + celsiusToKelvin(inputSuhu));
