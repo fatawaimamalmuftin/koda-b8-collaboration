@@ -42,9 +42,9 @@ async function main() {
 
   switch (unit) {
     case "C":
-      console.log("Celsius ke Kelvin     : " + celsiusToKelvin(value));
-      console.log("Celsius ke Rankine    : " + celsiusToRankine(value));
-      console.log("Celsius ke fahrenheit : " + celsiusToFahrenheit(value));
+      console.log("Celcius ke Kelvin     : " + celsiusToKelvin(value));
+      console.log("Celcius ke Rankine    : " + celsiusToRankine(value));
+      console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(value));
       break;
     case "K":
       console.log("Kelvin ke Celcius     : " + kelvinToCelsius(value));
