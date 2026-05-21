@@ -1,8 +1,8 @@
 // TODO: Uncomment after implemented
 const {
-  // celsiusToKelvin,
-  // celsiusToRankine,
-  // celsiusToFahrenheit,
+  celsiusToKelvin,
+  celsiusToRankine,
+  celsiusToFahrenheit,
 } = require("./utils/celsius.js");
 
 const {
@@ -23,5 +23,8 @@ const {
   // fahrenheitToRankine,
 } = require("./utils/fahrenheit.js");
 
+const inputSuhu = 100;
 
-// TODO: Do user input and calculation.
+console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(inputSuhu));
+console.log("Celcius ke Kelvin     : " + celsiusToKelvin(inputSuhu));
+console.log("Celcius ke Rankine    : " + celsiusToRankine(inputSuhu));
