@@ -4,16 +4,16 @@ const rl = createInterface({
   output : process.stdout
 });
 
-exports.tanya = (text)=>{
+exports.input = (text)=>{
   return new Promise((resolve)=>{
-    rl.question(text, (jawaban)=>{
-      resolve(jawaban);
+    rl.question(text, (answer)=>{
+      resolve(answer);
     });
   });
 };
 
-exports.tutup = () => {
+exports.closeInput = (text) => {
   console.clear;
-  console.log("Terima kasih telah berkunjung!");
+  console.log(text);
   rl.close();
 };
