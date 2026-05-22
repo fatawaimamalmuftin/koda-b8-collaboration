@@ -7,9 +7,9 @@ const {
 } = require("./utils/celsius.js");
 
 const {
-  // kelvinToCelsius,
-  // kelvinToRankine,
-  // kelvinToFahrenheit,
+  kelvinToCelsius,
+  kelvinToRankine,
+  kelvinToFahrenheit,
 } = require("./utils/kelvin.js");
 
 const {
@@ -41,31 +41,30 @@ async function main() {
   console.log(`\n---- Hasil konversi---- `);
 
   switch (unit) {
-  case "C":
-    console.log("Celcius ke Kelvin     : " + celsiusToKelvin(value));
-    console.log("Celcius ke Rankine    : " + celsiusToRankine(value));
-    console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(value));
-    break;
-  case "K":
-    console.log("Kelvin ke Celcius     : " + kelvinToCelsius(value));
-    console.log("Kelvin ke Rankine    : " + kelvinToRankine(value));
-    console.log("Kelvin ke fahrenheit : " + kelvinToFahrenheit(value));
-    break;
-  case "R":
-    console.log("Rankine ke Celcius    : " + rankineToCelsius(value));
-    console.log("Rankine ke Kelvin     : " + rankineToKelvin(value));
-    console.log("Rankine ke fahrenheit : " + rankineToFahrenheit(value));
-    break;
-  case "F":
-    console.log("Fahrenheit ke Celcius : " + fahrenheitToCelsius(value));
-    console.log("Fahrenheit ke Kelvin  : " + fahrenheitToKelvin(value));
-    console.log("Fahrenheit ke Rankine : " + fahrenheitToRankine(value));
-    break;
-  default:
-    closeInput("Input salah");
+    case "C":
+      console.log("Celcius ke Kelvin     : " + celsiusToKelvin(value));
+      console.log("Celcius ke Rankine    : " + celsiusToRankine(value));
+      console.log("Celcius ke fahrenheit : " + celsiusToFahrenheit(value));
+      break;
+    case "K":
+      console.log("Kelvin ke Celcius     : " + kelvinToCelsius(value));
+      console.log("Kelvin ke Rankine    : " + kelvinToRankine(value));
+      console.log("Kelvin ke fahrenheit : " + kelvinToFahrenheit(value));
+      break;
+    case "R":
+      console.log("Rankine ke Celcius    : " + rankineToCelsius(value));
+      console.log("Rankine ke Kelvin     : " + rankineToKelvin(value));
+      console.log("Rankine ke fahrenheit : " + rankineToFahrenheit(value));
+      break;
+    case "F":
+      console.log("Fahrenheit ke Celcius : " + fahrenheitToCelsius(value));
+      console.log("Fahrenheit ke Kelvin  : " + fahrenheitToKelvin(value));
+      console.log("Fahrenheit ke Rankine : " + fahrenheitToRankine(value));
+      break;
+    default:
+      closeInput("Input salah");
   }
 
   closeInput(`\nProgram selesai.`);
-
 }
 main();
