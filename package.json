@@ -4,8 +4,20 @@
   "description": "Interactive terminal temperature converter",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint ./*.js",
+    "lint:fix": "eslint ./*.js --fix"
   },
-  "keywords": ["temperature", "converter", "cli", "exercise"],
-  "license": "MIT"
+  "keywords": [
+    "temperature",
+    "converter",
+    "cli",
+    "exercise"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0"
+  }
 }
