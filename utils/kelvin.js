@@ -1,4 +1,4 @@
-function kelvinToCelcius(value) {
+function kelvinToCelsius(value) {
   return value - 273.15;
 }
 function kelvinToRankine(value) {
@@ -9,7 +9,7 @@ function kelvinToFahrenheit(value) {
 }
 
 module.exports = {
-  kelvinToCelcius,
+  kelvinToCelsius,
   kelvinToRankine,
   kelvinToFahrenheit,
 };
