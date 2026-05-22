@@ -48,8 +48,8 @@ async function main() {
     break;
   case "K":
     console.log("Kelvin ke Celcius     : " + kelvinToCelsius(value));
-    console.log("Kelvin ke Rankine    : " + kelvinToRankine(value));
-    console.log("Kelvin ke fahrenheit : " + kelvinToFahrenheit(value));
+    console.log("Kelvin ke Rankine     : " + kelvinToRankine(value));
+    console.log("Kelvin ke fahrenheit  : " + kelvinToFahrenheit(value));
     break;
   case "R":
     console.log("Rankine ke Celcius    : " + rankineToCelsius(value));
